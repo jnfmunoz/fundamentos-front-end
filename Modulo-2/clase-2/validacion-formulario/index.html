@@ -1,0 +1,29 @@
+<!-- 
+    EXPRESIONES REGULARES
+    ^ : indica el principio de una cadena
+    $ : indica el final de la cadena
+    () : agrupamiento de parte de una expresión
+    {} : indica el numero o intervalo de longitud de la expresión
+    [] : un conjunto de caracteres de la expresión
+    . : cualquier caracter con excepción del salto de línea
+    \ : para escribir un carácter especial y que sea tratado como un literal
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>expresiones regulares</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="rut">rut</label>
+            <input type="text" name="rut" pattern="^[0-9]{6-8}+-[0-9kK]{1}$" required>
+            <label for="correo">correo</label>
+            <input type="email" name="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+            
+            <input type="submit" value="Boton">
+        </form>
+    </body>
+</html>
